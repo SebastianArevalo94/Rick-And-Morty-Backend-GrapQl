@@ -1,0 +1,26 @@
+{
+  "name": "rick-and-morty-graphql",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "seed": "node seed.js",
+    "start": "index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^3.10.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "graphql": "^16.5.0",
+    "mongoose": "^6.5.0",
+    "mongoose-seed": "^0.6.0",
+    "mongoose-seed-db": "^0.0.10",
+    "nodemon": "^2.0.19"
+  }
+}

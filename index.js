@@ -7,7 +7,6 @@ import "dotenv/config.js";
 import "./API/database.js";
 
 const app = express();
-app.use(cors());
 const port = process.env.PORT || 5000;
 
 const startServer = async () => {
@@ -15,6 +14,8 @@ const startServer = async () => {
     typeDefs,
     resolvers,
   });
+
+  app.use(cors());
 
   await apolloServer.start();
 
